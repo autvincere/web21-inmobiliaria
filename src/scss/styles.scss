@@ -310,7 +310,7 @@ header {
         @include media(xs) {
             display: none;
             height: 115vh;
-            width: 115vw;
+            width: 100vw;
         }
         nav {
             @include vertical-align();
@@ -340,7 +340,7 @@ header {
                         transition: all 0.7s ease;
                         
                         @include media(xs) {
-                            font-size: 2.5em;
+                            font-size: 2em;
                         }
                         &:hover {
                             background-color: black;
@@ -400,7 +400,7 @@ section.video {
     width: 100vw;
     @include media(xs) {
         height: 115vh;
-        width: 115vw;
+        width: 100vw;
     }
     article.call {
         @include vertical-align();
@@ -461,8 +461,8 @@ section.video {
         width: 100%;
         left: 0%;
         @include media(xs) {
-            left: 8%;
-            bottom: -60px;
+            left: 0%;
+            bottom: 2%;
         }
         p {
             text-transform: uppercase;
@@ -995,6 +995,7 @@ section.quienes {
                         }
                         p {
                             color: white;
+                            margin-bottom: 11px;
                         }
                         i {
                             padding-top: 20px;
@@ -1025,7 +1026,7 @@ section.quienes {
             display: block;
         }
         ul {
-            position: absolute;
+            position: relative;
             bottom: 10px;
             left: 0%!important;
 //            right: 20%;
@@ -1033,6 +1034,7 @@ section.quienes {
             color: white;
             @include media(xs) {
                 background-color: black;
+                position: absolute;
             }
             li {
                 display: inline-block;
@@ -1168,6 +1170,9 @@ section.news {
             margin-top: 98px;
             transform-style: preserve-3d;
             margin-right: 40px;
+            @include media(xs) {
+                margin-right: 0px;
+            }
             &::before {
                 content: "";
                 position: absolute;

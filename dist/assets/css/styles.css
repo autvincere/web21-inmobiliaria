@@ -570,7 +570,7 @@ header div.menu {
     header div.menu {
       display: none;
       height: 115vh;
-      width: 115vw; } }
+      width: 100vw; } }
   header div.menu nav {
     position: relative;
     top: 50%;
@@ -602,7 +602,7 @@ header div.menu {
         transition: all 0.7s ease; }
         @media (min-width: 320px) and (max-width: 767px) {
           header div.menu nav ul li a {
-            font-size: 2.5em; } }
+            font-size: 2em; } }
         header div.menu nav ul li a:hover {
           background-color: black; }
         header div.menu nav ul li a:before {
@@ -656,7 +656,7 @@ section.video {
   @media (min-width: 320px) and (max-width: 767px) {
     section.video {
       height: 115vh;
-      width: 115vw; } }
+      width: 100vw; } }
   section.video article.call {
     position: relative;
     top: 50%;
@@ -713,8 +713,8 @@ section.video {
     left: 0%; }
     @media (min-width: 320px) and (max-width: 767px) {
       section.video article.inferior {
-        left: 8%;
-        bottom: -60px; } }
+        left: 0%;
+        bottom: 2%; } }
     section.video article.inferior p {
       text-transform: uppercase;
       font-size: 0.8em;
@@ -1192,7 +1192,8 @@ section.quienes {
           section.quienes ul li.rectangle center figure figcaption h3 {
             text-align: center; } }
       section.quienes ul li.rectangle center figure figcaption p {
-        color: white; }
+        color: white;
+        margin-bottom: 11px; }
       section.quienes ul li.rectangle center figure figcaption i {
         padding-top: 20px;
         color: white;
@@ -1213,14 +1214,15 @@ section.quienes {
         margin: 0 auto;
         display: block; } }
     section.quienes nav ul {
-      position: absolute;
+      position: relative;
       bottom: 10px;
       left: 0% !important;
       text-align: center;
       color: white; }
       @media (min-width: 320px) and (max-width: 767px) {
         section.quienes nav ul {
-          background-color: black; } }
+          background-color: black;
+          position: absolute; } }
       section.quienes nav ul li {
         display: inline-block;
         margin-right: 10px; }
@@ -1355,6 +1357,9 @@ section.news {
       -moz-transform-style: preserve-3d;
       transform-style: preserve-3d;
       margin-right: 40px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        section.news ul.card-cont li.card-plane {
+          margin-right: 0px; } }
       section.news ul.card-cont li.card-plane::before {
         content: "";
         position: absolute;
