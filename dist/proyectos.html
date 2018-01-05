@@ -12,39 +12,37 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-
     <link rel="shortcut icon" href="assets/img/Favicon.ico" type="image/x-icon" />
     <link rel="icon" href="assets/img/Favicon.ico" type="image/x-icon" />
     <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
-    
     <title>Inmobiliaria 21</title>
 </head>
 
-    <body class="bkg-quienes overflow">
-
+<body class="bkg-quienes">
     <header>
-       
-        <a href="index.html" class="logo">
-            <img class="logo-principal" src="assets/img/21-logo.png" alt="">
-        </a>
-
-
+        <a href="index.html" class="logo"> <img class="logo-principal" src="assets/img/21-logo.png" alt=""> </a>
+        
         <div class="container-menu">
-            <div class="sections">
-                <a>proyectos</a>
-                <div class="vertical-line"></div>
-                <img class="open-menu" src="assets/img/hamburger-icon.svg" alt="">
-            </div>
-
-            <div class="languajes">
-                <a href="#">eng</a>
-                <div>-</div>
-                <a href="#">esp</a>   
-            </div>
+            <div class="sections"> <a>proyectos</a>
+                <div class="vertical-line"></div> 
+<!--                <img class="open-menu" src="assets/img/hamburger-icon.svg" alt=""> -->
+               
+                <a class="hamburger-menu">
+                    <div class="bar"></div>	
+                </a>
+               
+                </div>
+                
+            <div class="languajes"> <a href="#">eng</a>
+                <div>-</div> <a href="#">esp</a> </div>
         </div>
         
-        <div class="menu">
-            <a class="btn-close" href="#">X</a>
+
+        
+        <!--menu nuevo-->
+        
+        <div id="menu-res">
+                
             <nav>
                 <ul>
                     <li><a href="index.html">home</a></li>
@@ -54,61 +52,58 @@
                     <li><a href="contacto.html">contacto</a></li>
                 </ul>
             </nav>
+               
+                <input id="searchBoxInput" placeholder="Search me" type="text"/>
             <article>
-                <p>
-                    Av Presidente Riesco 5561, las condes, Santiago, Chile.
-                </p>
-                <p class="left">
-                    contacto@21i.cl
-                </p>
-                <a class="right" href="#">(+56) 2 2887 2121</a>
+                <p> Av Presidente Riesco 5561, las condes, Santiago, Chile. </p>
+                <p class="left"> contacto@21i.cl </p> <a class="right" href="#">(+56) 2 2887 2121</a>
                 <p>21 gestión inmobiliaria - todos los derechos reservados®</p>
             </article>
+            
         </div>
+        
+        <!--CIERRE menu nuevo-->
+        
     </header>
-
     <section class="quienes">
         <ul>
-          
-<!--PROYECTO SANTIAGO-->
-
+            <!--PROYECTO SANTIAGO-->
             <li id="santiago" class="rectangle bkg-none visible">
                 <center>
-
                     <aside>
                         <ul id="nav-project">
+                            <!--
                             <li>
-                                <a href="#santiago-video">Video</a></li>
-                            <li>
-                                <a href="#santiago-planimetria">planimetria</a>
+                                <a href="#santiago-video">Video</a>
                             </li>
-                            <li>
-                                <a href="#santiago-ubicacion">ubicacion</a>
-                            </li>
+-->
+                            <li> <a href="#santiago-planimetria">planimetria</a> </li>
+                            <li> <a href="#santiago-ubicacion">ubicacion</a> </li>
                         </ul>
                     </aside>
-
                     <article>
-
                         <figure>
                             <div class="proyectos">
-                                <h2>parque capital- centro industrial</h2>
-                            </div>
-                            <img src="assets/img/bkg-santiago.jpg" alt="">
-                        </figure>
-∫
-                        <figure>
-                            <div class="proyectos">
-                                <img class="icon-arrow" src="assets/img/download-arrow.svg" alt="" />
-                                <h6>Brochure Santiago de Chile</h6>
-                            </div>
-                        </figure>
-
+                                <h2>parque capital- centro industrial</h2> </div>
+                            <h5><strong>Descripción:</strong> El complejo está ubicado en el nuevo polo de desarrollo industrial del
+                                sector norponiente de Santiago. Contempla instalaciones para áreas industriales y
+                                otras para zonas destinadas al comercio y oficinas.
+                            </h5>
+                            <h5>
+                                <strong>Ubicación:</strong> Comuna de Lampa sobre el camino Noviciado, aprox a 8 Kms. de la Ruta 68
+                                y a minutos del aeropuerto.
+                            </h5>
+                            <h5>
+                                <strong>Tamaño del proyecto:</strong> 400 hectáreas
+                            </h5> <img src="assets/img/proyectos/parque-capital.jpg" alt=""> </figure>
+                        <div class="proyectos">
+                            <a href="assets/downloads/parque_capital.pdf" target="_blank"> <img class="icon-arrow" src="assets/img/download-arrow.svg" alt="" />
+                                <h6>Brochure Santiago de Chile</h6> </a>
+                        </div>
                     </article>
-
                 </center>
             </li>
-
+            <!--
             <li id="santiago-video" class="rectangle bkg-none">
                 <center>
 
@@ -129,8 +124,6 @@
 
                         <figure>
                             <video class="video-proyect" poster="assets/img/video-home.jpg" id="bgvid" autoplay muted loop controls>
-                                <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-<!--                                <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">-->
                                 <source src="assets/video/singapore.mp4"type="video/mp4">
                             </video>
                         </figure>
@@ -139,123 +132,100 @@
 
                 </center>
             </li>
-
-
+-->
             <li id="santiago-planimetria" class="rectangle bkg-none">
                 <center>
-
                     <aside>
                         <ul id="nav-project">
+                            <!--
                             <li>
-                                <a href="#santiago-video">Video</a></li>
-                            <li>
-                                <a href="#santiago-planimetria">planimetria</a>
+                                <a href="#santiago-video">Video</a>
                             </li>
-                            <li>
-                                <a href="#santiago-ubicacion">ubicacion</a>
-                            </li>
+-->
+                            <li> <a href="#santiago-planimetria">planimetria</a> </li>
+                            <li> <a href="#santiago-ubicacion">ubicacion</a> </li>
                         </ul>
                     </aside>
-
                     <article>
-
                         <figure>
                             <div class="proyectos">
-                                <h2>Lo Barnechea - Santiago De Chile</h2>
-                            </div>
-                            <img src="assets/img/bkg-santiago-planimetria.jpg" alt="">
-                        </figure>
-
-                        <figure>
-                            <div class="proyectos">
-                                <img class="icon-arrow" src="assets/img/download-arrow.svg" alt="" />
-                                <h6>Brochure Santiago de Chile</h6>
-                            </div>
-                        </figure>
-
+                                <h2>parque capital- centro industrial</h2> </div> <img src="assets/img/proyectos/parque-capital-planimetria.jpg" alt=""> </figure>
+                        <div class="proyectos">
+                            <a href="assets/downloads/parque_capital.pdf" target="_blank"> <img class="icon-arrow" src="assets/img/download-arrow.svg" alt="" /> </a>
+                            <h6>Brochure Santiago de Chile</h6> </div>
                     </article>
-
                 </center>
             </li>
-
             <li id="santiago-ubicacion" class="rectangle bkg-none">
                 <center>
-
                     <aside>
                         <ul id="nav-project">
+                            <!--
                             <li>
-                                <a href="#santiago-video">Video</a></li>
-                            <li>
-                                <a href="#santiago-planimetria">planimetria</a>
+                                <a href="#santiago-video">Video</a>
                             </li>
-                            <li>
-                                <a href="#santiago-ubicacion">ubicacion</a>
-                            </li>
+-->
+                            <li> <a href="#santiago-planimetria">planimetria</a> </li>
+                            <li> <a href="#santiago-ubicacion">ubicacion</a> </li>
                         </ul>
                     </aside>
-
                     <article>
-
                         <figure>
                             <div class="proyectos">
-                                <h2>Lo Barnechea - Santiago De Chile</h2>
-                            </div>
-                            <img src="assets/img/bkg-mapa.jpg" alt="">
+                                <h2>parque capital - centro industrial</h2> </div>
+                            <!--                            <div id="map-canvas"></div>-->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13321.10731813273!2d-70.5928309!3d-33.4160264!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf15e2808e51%3A0xf39a618694f6bb52!2sAv.+Apoquindo+3600%2C+Las+Condes%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1514919018256" frameborder="0" id="iframe" name="senda"></iframe>
                         </figure>
-
                     </article>
-
                 </center>
             </li>
-
- <!--CIERRE PROYECTO SANTIAGO-->
-           
-<!--PROYECTO SINGAPUR-->
-
-            <li id="singapur" class="rectangle bkg-none visible">
+            <!--CIERRE PROYECTO SANTIAGO-->
+            <!--PROYECTO SINGAPUR-->
+            <li id="singapur" class="rectangle bkg-none">
                 <center>
-
                     <aside>
                         <ul id="nav-project">
+                            <!--
                             <li>
-                                <a href="#singapur-video">Video</a></li>
-                            <li>
-                                <a href="#singapur-planimetria">planimetria</a>
+                                <a href="#singapur-video">Video</a>
                             </li>
-                            <li>
-                                <a href="#singapur-ubicacion">ubicacion</a>
-                            </li>
+-->
+                            <li> <a href="#singapur-planimetria">planimetria</a> </li>
+                            <li> <a href="#singapur-ubicacion">ubicacion</a> </li>
                         </ul>
                     </aside>
-
                     <article>
-
                         <figure>
                             <div class="proyectos">
-                                <h2>Offices - Singapur</h2>
-                            </div>
-                            <img src="assets/img/bkg-singapur.jpg" alt="">
-                        </figure>
-
-                        <figure>
-                            <div class="proyectos">
-                                <img class="icon-arrow" src="assets/img/download-arrow.svg" alt="" />
-                                <h6>Brochure Santiago de Chile</h6>
-                            </div>
-                        </figure>
-
+                                <h2>La Dehesa</h2> </div>
+                            <h5><strong>Descripción:</strong>  El proyecto está ubicado en el lugar más céntrico del barrio La Dehesa y
+                                contempla servicios de hotelería y gastronomía, zonas destinadas al comercio, oficinas
+                                y viviendas.
+                            </h5>
+                            <h5>
+                                <strong>Ubicación:</strong> Entre Av. La Dehesa y Los Adobes.
+                            </h5>
+                            <h5>
+                                <strong>Tamaño del proyecto:</strong> 1, 68 hectáreas.
+                            </h5> <img src="assets/img/proyectos/la-dehesa.jpg" alt=""> </figure>
+                        <div class="proyectos">
+                            <a href="assets/downloads/presentacion_la_dehesa2017.pdf" target="_blank"> <img class="icon-arrow" src="assets/img/download-arrow.svg" alt="" />
+                                <h6>Brochure La Dehesa</h6> </a>
+                        </div>
                     </article>
-
                 </center>
             </li>
-
+            <!--
             <li id="singapur-video" class="rectangle bkg-none">
                 <center>
 
                     <aside>
                         <ul id="nav-project">
+                           
                             <li>
-                                <a href="#singapur-video">Video</a></li>
+                                <a href="#singapur-video">Video</a>
+                            </li>
+                            
                             <li>
                                 <a href="#singapur-planimetria">planimetria</a>
                             </li>
@@ -269,8 +239,7 @@
 
                         <figure>
                             <video class="video-proyect" poster="assets/img/video-home.jpg" id="bgvid" autoplay muted loop controls>
-                                <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-                                <!--                                <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">-->
+                            
                                 <source src="assets/video/singapore.mp4"type="video/mp4">
                             </video>
                         </figure>
@@ -279,117 +248,85 @@
 
                 </center>
             </li>
-
-
+-->
             <li id="singapur-planimetria" class="rectangle bkg-none">
                 <center>
-
                     <aside>
                         <ul id="nav-project">
+                            <!--
                             <li>
-                                <a href="#singapur-video">Video</a></li>
-                            <li>
-                                <a href="#singapur-planimetria">planimetria</a>
+                                <a href="#singapur-video">Video</a>
                             </li>
-                            <li>
-                                <a href="#singapur-ubicacion">ubicacion</a>
-                            </li>
+-->
+                            <li> <a href="#singapur-planimetria">planimetria</a> </li>
+                            <li> <a href="#singapur-ubicacion">ubicacion</a> </li>
                         </ul>
                     </aside>
-
                     <article>
-
                         <figure>
                             <div class="proyectos">
-                                <h2>Lo Barnechea - Santiago De Chile</h2>
-                            </div>
-                            <img src="assets/img/bkg-santiago-planimetria.jpg" alt="">
-                        </figure>
-
-                        <figure>
-                            <div class="proyectos">
-                                <img class="icon-arrow" src="assets/img/download-arrow.svg" alt="" />
-                                <h6>Brochure Santiago de Chile</h6>
-                            </div>
-                        </figure>
-
+                                <h2>La Dehesa</h2> </div> <img src="assets/img/proyectos/la-dehesa-map.jpg" alt=""> </figure>
+                        <div class="proyectos">
+                            <a href="assets/downloads/parque_capital.pdf" target="_blank"> <img class="icon-arrow" src="assets/img/download-arrow.svg" alt="" /> </a>
+                            <h6>Brochure Santiago de Chile</h6> </div>
                     </article>
-
                 </center>
             </li>
-
             <li id="singapur-ubicacion" class="rectangle bkg-none">
                 <center>
-
                     <aside>
                         <ul id="nav-project">
-                            <li>
-                                <a href="#singapur-video">Video</a></li>
-                            <li>
-                                <a href="#singapur-planimetria">planimetria</a>
-                            </li>
-                            <li>
-                                <a href="#singapur-ubicacion">ubicacion</a>
-                            </li>
+                            <li> <a href="#singapur-video">Video</a></li>
+                            <li> <a href="#singapur-planimetria">planimetria</a> </li>
+                            <li> <a href="#singapur-ubicacion">ubicacion</a> </li>
                         </ul>
                     </aside>
-
                     <article>
-
                         <figure>
                             <div class="proyectos">
-                                <h2>Lo Barnechea - Santiago De Chile</h2>
-                            </div>
-                            <img src="assets/img/bkg-mapa.jpg" alt="">
+                                <h2>La Dehesa</h2> </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3332.5174250445475!2d-70.51965168437016!3d-33.3575551001376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cbdd07c346df%3A0xc770da0c9fdc6668!2sLos+Adobes+%26+Av.+La+Dehesa%2C+Lo+Barnechea%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1515007722303" frameborder="0" id="iframe" name="senda"></iframe>
                         </figure>
-
                     </article>
-
                 </center>
             </li>
-
-
-            <!--CIERRE PROYECTO singapur-->           
-            
+            <!--CIERRE PROYECTO singapur-->
             <!--PROYECTO tokio-->
-
-            <li id="tokio" class="rectangle bkg-none visible">
+            <li id="tokio" class="rectangle bkg-none">
                 <center>
-
                     <aside>
                         <ul id="nav-project">
+                            <!--
                             <li>
-                                <a href="#tokio-video">Video</a></li>
-                            <li>
-                                <a href="#tokio-planimetria">planimetria</a>
+                                <a href="#tokio-video">Video</a>
                             </li>
-                            <li>
-                                <a href="#tokio-ubicacion">ubicacion</a>
-                            </li>
+-->
+                            <li> <a href="#tokio-planimetria">planimetria</a> </li>
+                            <li> <a href="#tokio-ubicacion">ubicacion</a> </li>
                         </ul>
                     </aside>
-
                     <article>
-
                         <figure>
                             <div class="proyectos">
-                                <h2>Lo Barnechea - Santiago De Chile</h2>
-                            </div>
-                            <img src="assets/img/bkg-tokio.jpg" alt="">
-                        </figure>
-
-                        <figure>
-                            <div class="proyectos">
-                                <img class="icon-arrow" src="assets/img/download-arrow.svg" alt="" />
-                                <h6>Brochure Santiago de Chile</h6>
-                            </div>
-                        </figure>
-
+                                <h2>Palmas de Viña</h2> </div>
+                            <h5><strong>Descripción:</strong> El proyecto será un centro comercial que agrupará servicios de
+                                hotelería, restaurantes, centro de salud , entretención, supermercados, tiendas y
+                                oficinas.
+                            </h5>
+                            <h5>
+                                <strong>Ubicación:</strong> Camino Agua Santa.
+                            </h5>
+                            <h5>
+                                <strong>Tamaño del proyecto:</strong> 129.200 metros.
+                            </h5> <img src="assets/img/proyectos/palmas-vina.jpg" alt=""> </figure>
+                        <div class="proyectos">
+                            <a href="assets/downloads/presentacion_la_dehesa2017.pdf" target="_blank"> <img class="icon-arrow" src="assets/img/download-arrow.svg" alt="" />
+                                <h6>Palmas de Viña</h6> </a>
+                        </div>
                     </article>
-
                 </center>
             </li>
-
+            <!--
             <li id="tokio-video" class="rectangle bkg-none">
                 <center>
 
@@ -410,8 +347,7 @@
 
                         <figure>
                             <video class="video-proyect" poster="assets/img/video-home.jpg" id="bgvid" autoplay muted loop controls>
-                                <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-                                <!--                                <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">-->
+                              
                                 <source src="assets/video/singapore.mp4"type="video/mp4">
                             </video>
                         </figure>
@@ -420,52 +356,67 @@
 
                 </center>
             </li>
-
-
+-->
             <li id="tokio-planimetria" class="rectangle bkg-none">
                 <center>
-
                     <aside>
                         <ul id="nav-project">
+                            <!--
                             <li>
-                                <a href="#tokio-video">Video</a></li>
-                            <li>
-                                <a href="#tokio-planimetria">planimetria</a>
-                            </li>
-                            <li>
-                                <a href="#tokio-ubicacion">ubicacion</a>
-                            </li>
+                                <a href="#tokio-video">Video</a>
+                             </li>
+-->
+                            <li> <a href="#tokio-planimetria">planimetria</a> </li>
+                            <li> <a href="#tokio-ubicacion">ubicacion</a> </li>
                         </ul>
                     </aside>
-
                     <article>
-
                         <figure>
                             <div class="proyectos">
-                                <h2>Lo Barnechea - Santiago De Chile</h2>
-                            </div>
-                            <img src="assets/img/bkg-santiago-planimetria.jpg" alt="">
-                        </figure>
-
-                        <figure>
-                            <div class="proyectos">
-                                <img class="icon-arrow" src="assets/img/download-arrow.svg" alt="" />
-                                <h6>Brochure Santiago de Chile</h6>
-                            </div>
-                        </figure>
-
+                                <h2>Palmas de Viña</h2> </div> <img src="assets/img/proyectos/palmas-vina-planimetria.jpg" alt=""> </figure>
+                        <div class="proyectos">
+                            <a href="assets/downloads/presentacion_la_dehesa2017.pdf" target="_blank"> <img class="icon-arrow" src="assets/img/download-arrow.svg" alt="" />
+                                <h6>Palmas de Viña</h6> </a>
+                        </div>
                     </article>
-
                 </center>
             </li>
-
             <li id="tokio-ubicacion" class="rectangle bkg-none">
                 <center>
-
                     <aside>
                         <ul id="nav-project">
+                            <!--
                             <li>
-                                <a href="#tokio-video">Video</a></li>
+                                <a href="#tokio-video">Video</a>
+                            </li>
+-->
+                            <li> <a href="#tokio-planimetria">planimetria</a> </li>
+                            <li> <a href="#tokio-ubicacion">ubicacion</a> </li>
+                        </ul>
+                    </aside>
+                    <article>
+                        <figure>
+                            <div class="proyectos">
+                                <h2>Palmas de Viña</h2> </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.867174633876!2d-71.56526528449234!3d-33.0336296808955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de05ae857e5b%3A0xd182b90bfed8cb5!2sAgua+Santa+-+Vi%C3%B1a+Del+Mar!5e0!3m2!1ses!2scl!4v1515011046156" frameborder="0" id="iframe" name="senda"></iframe>
+                        </figure>
+                    </article>
+                </center>
+            </li>
+            <!--CIERRE PROYECTO TOKIO-->
+            <!--LISTADO PROYECTOS-->
+            <li id="proyectos" class="rectangle bkg-none">
+                <center>
+                    <!--
+                    <aside>
+                        <ul id="nav-project">
+
+                            
+                            <li>
+                            <a href="#tokio-video">Video</a>
+                            </li>
+
+
                             <li>
                                 <a href="#tokio-planimetria">planimetria</a>
                             </li>
@@ -474,67 +425,79 @@
                             </li>
                         </ul>
                     </aside>
-
+-->
                     <article>
-
                         <figure>
                             <div class="proyectos">
-                                <h2>Lo Barnechea - Santiago De Chile</h2>
-                            </div>
-                            <img src="assets/img/bkg-mapa.jpg" alt="">
+                                <h2>Proyectos ejecutados</h2> </div>
+                            <ul class="lista">
+                                <li>
+                                    <h6>Proyecto:</h6>
+                                    <h5>Condominio Mirador de Antupirén, Peñalolén
+                                        Antupiren 7408, Peñalolén</h5>
+                                    <h6>Descripción:</h6>
+                                    <h5>2 Edificios de 4 pisos cada uno. Estacionamientos en superficie. Piscina,
+                                        gimnasio, salas multiuso, lavandería, jardines, juegos Infantiles y quinchos.</h5> </li>
+                                <li>
+                                    <h6>Proyecto:</h6>
+                                    <h5>Edificio Alsacia Golf, Las Condes
+                                        Alsacia 145, Las Condes</h5>
+                                    <h6>Descripción:</h6>
+                                    <h5>Edificio de 19 pisos y 4 subterráneos. Estacionamientos en subterráneo. Piscina,
+                                        sauna y 2 quinchos en Azotea, gimnasio y salón de pool y reuniones.</h5> </li>
+                                <li>
+                                    <h6>Proyecto:</h6>
+                                    <h5>Edificio Sporting, Viña del Mar
+                                        7 Norte 1401, Viña del Mar</h5>
+                                    <h6>Descripción:</h6>
+                                    <h5>Edificio de 22 pisos y 2 subterráneos. Estacionamiento en niveles -2 a 2. Piscina en
+                                        azotea, gimnasio, sala internet, sala estar y multiuso, lavandería,
+                                        y Bike Parking.</h5> </li>
+                                <li>
+                                    <h6>Proyecto:</h6>
+                                    <h5>Condominio Baucis, Providencia
+                                        Av. Hernando de Aguirre 1887, Providencia</h5>
+                                    <h6>Descripción:</h6>
+                                    <h5>2 Edificio de 7 pisos cada uno. Estacionamientos en 3 subterráneos.
+Piscina,
+                                        jardines, quincho, gimnasio, sala internet, sala multiuso y lavandería.</h5> </li>
+                                <li>
+                                    <h6>Proyecto:</h6>
+                                    <h5>Edificios Valle Norte y Sur, Puerto Velero
+                                        Condominio Puerto Velero, IV Región</h5>
+                                    <h6>Descripción:</h6>
+                                    <h5>2 Edificio de 4 pisos cada uno. Todos los estacionamientos en superficie. Piscina,
+                                        jardines, quincho y bike parking.</h5> </li>
+                                <li>
+                                    <h6>Proyecto:</h6>
+                                    <h5>Altavista Santiago – Etapas 1, 2 y 3 – La Florida
+                                        Av. Vicuña Mackenna 7735, La Florida.</h5>
+                                    <h6>Descripción:</h6>
+                                    <h5>3 edificios de 22 pisos cada uno . 3 subterráneos de estacionamientos y
+                                        bodegas. Piscinas , jardínes, quinchos , gimnasio, salas de cine , spa, salas
+                                        multiuso y bike parking.</h5> </li>
+                            </ul>
                         </figure>
-
                     </article>
-
                 </center>
             </li>
-
-
-            <!--CIERRE PROYECTO singapur-->       
-           
-
-            
-
-           
-
+            <!--CIERRE PROYECTO singapur-->
         </ul>
-        <!--
-        <div class="rectangle">
-            <center>
-                <figure>
-                    <div class="cont-image">
-                        <img src="assets/img/trabajador1.jpg" alt="">
-                    </div>
-                    <figcaption>
-
-                        <h3>pedro matucana</h3>
-                        <p>“Visionario es un adjetivo que suele emplearse para calificar a la persona que, gracias a su creatividad, su imaginación o sus conocimientos, logra prever qué ocurrirá en el futuro. El concepto, de este modo, se asocia a nuestro estilo de vida”.</p>
-
-                        <i>“CEO 21 INMOBILIARIA”.</i>
-
-                    </figcaption>
-                </figure>
-            </center>
-        </div>
--->
         <div class="clearfix"></div>
-
-        <!--        nav>ul>li*5>a[#]-->
         <nav id="navegacion">
             <ul>
-                <li><a class="active" href="#santiago">Santiago de Chile</a></li>
-                <li><a href="#singapur">Singapur</a></li>
-                <li><a href="#tokio">Tokio</a></li>
-                <li><a href="#ladehesa">La Dehesa</a></li>
-                <li><a href="#newyork">New York</a></li>
+                <li><a class="active" href="#santiago">parque capital</a></li>
+                <li><a href="#singapur">La Dehesa</a></li>
+                <li><a href="#tokio">Palmas de Viña</a></li>
+                <li><a href="#proyectos">Proyectos ejecutados</a></li>
             </ul>
         </nav>
-
     </section>
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGQionNQ7A1ym0NdH5AYkV6P4n-cKsMDs&callback"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="assets/js/libs/jquery.waypoints.min.js"></script>
+    <script src="assets/js/libs/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="https://rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <!--    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsPjUAEBq5LkaidZsUHP1aEwYg-5ItDUk&callback" type="text/javascript"></script>-->
     <script src="assets/js/apps.js"></script>
 </body>
 

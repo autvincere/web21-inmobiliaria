@@ -1,6 +1,8 @@
 $(document).ready(function () {
     
     
+    
+    
     /*************************************************************************************
     ANIMATED LIBRARY AND WAYPOINT
     *************************************************************************************/
@@ -14,38 +16,59 @@ $(document).ready(function () {
     CIERRE ANIMATED LIBRARY AND WAYPOINT
     *************************************************************************************/
     
-    //    $.ajax({
-    //        url: "/include/",
-    //        dataType: "html",
-    //        success: function(html) {
-    //            $(document).ready(function() {
-    //                $('body').prepend($(html).find('#header'));
-    //                $('body').append($(html).find('#footer'));
-    //            });
-    //        }
-    //    });
+    /*************************************************************************************
+   MENU RESPONSIVE
+    *************************************************************************************/
     
-        $('div.menu').removeClass('left-menu')
-        $('div.menu').removeClass('right-menu')
+  
+    
+        var toggled = false;
+        
+    $('.hamburger-menu').on('click', function () {
+        if(!toggled)
+            searchBar();   
+        else
+            searchBarClose();
+
+        $('.bar').toggleClass('animate');
+    });
+    
+
+    function searchBar() {
+        $('input').fadeIn('fast', function () {
+            $('#menu-res').animate({ width: 'toggle' });
+        });
+
+    }
+
+    function searchBarClose() {
+        $('#menu-res').animate({ width: 'toggle' }, function () {
+            $('input').fadeOut('slow');
+        });
+    }
    
 
-    $('.open-menu').on('click', function () {
-        $('div.menu').addClass('right-menu');
-        $('div.menu').removeClass('left-menu')
-    });
+//    $('.hamburger-menu').on('click', function () {
+//        $('div.ocultador').animate({
+//            width: "toggle"
+//        });
+//        $('div.menu').toggleClass('width');
+//        $('.bar').toggleClass('animate');
+//    });
 
-    $('a.btn-close').on('click', function () {
-        $('div.menu').addClass('left-menu')
-        $('div.menu').removeClass('right-menu')
-    });
 
+    
+    /*************************************************************************************
+   CIERRE MENU RESPONSIVE
+    *************************************************************************************/
+    
     // MENU QUIENES SOMOS
     var bloques = $('.rectangle'),
         enlaces = $('#navegacion').find('a'),
         negocios =$('.cont-text-three').find('a'),
         proyectos =$('#nav-project li').find('a');
 
-    enlaces.click(function (e) {
+    enlaces.on('click', function (e) {
         e.preventDefault();
 //        console.log('estoy funcando')
         
@@ -63,7 +86,7 @@ $(document).ready(function () {
             .addClass('active');
        
     });
-        negocios.click(function (e) {
+    negocios.on('click', function (e) {
         e.preventDefault();
 //        console.log('btn negocios')
         
@@ -75,9 +98,9 @@ $(document).ready(function () {
             .removeClass('visible');
             });
     
-    proyectos.click(function (e) {
+    proyectos.on('click', function (e) {
         e.preventDefault();
-        console.log('btn proyextos')
+//        console.log('btn proyextos')
 
         var hash = $(this).attr('href');
         bloques
@@ -95,8 +118,50 @@ $(document).ready(function () {
             animation: "slide"
         });
     });
+  
+    
+    /*************************************************************************************
+    GOOGLE MAP
+    *************************************************************************************/
     
     
+//    function initMap() {
+//        var uluru = {lat: -33.416026, lng: -70.5928309};
+//        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+//            zoom: 17,
+//            center: uluru
+//        });
+//        var marker = new google.maps.Marker({
+//            position: uluru,
+//            map: map
+//        });
+//    }
+//    initMap();
     
+//    function initialize(latLng) {
+//        latLng = latLng.split(",")
+//        var valorMapa = new google.maps.LatLng(latLng[0], latLng[1]);
+//
+//        var mapOptions = {
+//            center: valorMapa,
+//            zoom: 17
+//        };
+//        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+//        var marker = new google.maps.Marker({
+//            position: valorMapa,
+//            title: "Hello World!"
+//        });
+//        // To add the marker to the map, call setMap();
+//        marker.setMap(map);
+//    }
+//
+//    function myMouseOut() {
+//        if (latLng) {
+//            var latLng = $(this).attr("data-latLng");
+//            initialize(latLng);
+//        }
+//    }
     
 });
+
+
