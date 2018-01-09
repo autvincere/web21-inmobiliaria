@@ -1,13 +1,17 @@
 //Utilidades
 
-
 @mixin vertical-align($position: relative) {
     position: $position;
     top: 50%;
     transform: perspective(1px) translateY(-50%);
     text-align: center;
 }
-
+@mixin inline-percent($percentage,$align,$vertical) {
+    display: inline-block;
+    width: $percentage;
+    text-align: $align;
+    vertical-align: $vertical;
+}
 @mixin mobile {
     display: block;
     width: 90%;

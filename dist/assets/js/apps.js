@@ -1,21 +1,5 @@
 $(document).ready(function () {
     
-    
-    
-    
-    /*************************************************************************************
-    ANIMATED LIBRARY AND WAYPOINT
-    *************************************************************************************/
-
-
-    $('section.video').waypoint(function(){
-        $('section.video > article#prueba').addClass('animated fadeInUp');
-
-    });
-    /*************************************************************************************
-    CIERRE ANIMATED LIBRARY AND WAYPOINT
-    *************************************************************************************/
-    
     /*************************************************************************************
    MENU RESPONSIVE
     *************************************************************************************/
@@ -24,7 +8,8 @@ $(document).ready(function () {
     
         var toggled = false;
         
-    $('.hamburger-menu').on('click', function () {
+    $('div.sections').on('click', function (e) {
+        e.preventDefault;
         if(!toggled)
             searchBar();   
         else
@@ -35,7 +20,7 @@ $(document).ready(function () {
     
 
     function searchBar() {
-        $('input').fadeIn('fast', function () {
+        $('#pie').fadeIn('fast', function () {
             $('#menu-res').animate({ width: 'toggle' });
         });
 
@@ -43,19 +28,10 @@ $(document).ready(function () {
 
     function searchBarClose() {
         $('#menu-res').animate({ width: 'toggle' }, function () {
-            $('input').fadeOut('slow');
+            $('#pie').fadeOut('slow');
         });
     }
    
-
-//    $('.hamburger-menu').on('click', function () {
-//        $('div.ocultador').animate({
-//            width: "toggle"
-//        });
-//        $('div.menu').toggleClass('width');
-//        $('.bar').toggleClass('animate');
-//    });
-
 
     
     /*************************************************************************************
@@ -110,14 +86,45 @@ $(document).ready(function () {
             .removeClass('visible');
     });
     
+    
+    /*************************************************************************************
+    ANIMATED LIBRARY AND WAYPOINT
+    *************************************************************************************/
+
+
+    $('section.video').waypoint(function(){
+        $('section.video > article#prueba').addClass('animated fadeInUp');
+
+    });
+    /*************************************************************************************
+    CIERRE ANIMATED LIBRARY AND WAYPOINT
+    *************************************************************************************/
+    
+    /*************************************************************************************
+    HOVER
+    *************************************************************************************/
+    
+    $('li.card-plane').hover(
+        function () {
+            $(this).find('.bkg-card').css('filter','grayscale(0.2)'); //.fadeIn(250)
+        },
+        function () {
+            $(this).find('.bkg-card').css('filter','grayscale(1)'); //.fadeOut(205)
+        }
+    );
+    
+    /*************************************************************************************
+    CIERRE HOVER
+    *************************************************************************************/
+    
     //FLEXSLIDER
     
     // Can also be used with $(document).ready()
-    $(window).load(function() {
+//    $(window).load(function() {
         $('.flexslider').flexslider({
             animation: "slide"
         });
-    });
+//    });
   
     
     /*************************************************************************************
